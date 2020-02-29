@@ -3,12 +3,12 @@ Web-based code viewer powered by woboq codeviewer.
 
 This project aims to setup a online nginx code viewer by using opensource woboq code viewer.
 
-# Dependencies
+## Dependencies
 
   * docker
   * docker-compose
   
-# Steps
+## Steps
 
   1. Run `./compose.sh` to start the container.
      
