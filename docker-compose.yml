@@ -1,0 +1,14 @@
+version: "3"
+services:
+  woboq:
+    build: ${HOMEDIR}
+    image: zongzw/woboq-nginx-image:latest
+    container_name: woboq-nginx-code-server
+    ports:
+      - 8024:80
+    volumes:
+      - ${HOMEDIR}:/root/woboq-nginx
+    command:
+      - nginx
+      - -c
+      - /root/woboq-nginx/nginx.conf
