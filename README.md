@@ -31,14 +31,14 @@ This project aims to setup a online nginx code viewer by using opensource woboq 
       
       * untar the source code and build it.
         
-        There should be no build error with default compiling option. Also, the dependent library packages have been installed with `Dockerfile`. But if unfortunately, there were building error, please ix it by finding the hints from compiling console output.
+        There should be no build error with default compiling option, because the dependent library packages have been installed with `Dockerfile`. But if unfortunately, there were building error(s), please ix it by finding the hints from compiling console output.
         
-        The building process will use `bear make`, which will generate the `compile_commands.json` under the code directory. It will be used in the next `generate.sh` step.
+        The building process uses `bear make`, which generates the `compile_commands.json` under the code directory. It will be used in the next `generate.sh` step.
         
-   4. Run `/root/woboq-nginx/generate.sh` to generate html files under html folder.
+   4. Run `/root/woboq-nginx/generate.sh` to generate html files under `html` folder.
     
-      The folder is used as nginx static html webroot.
+      The folder `html` is used as nginx static html webroot.
        
    5. Access `http://<your host address>:8024`.
    
-      The port can be changed in `docker-compose.yml`, 8024 is link-thought of 1024.
+      The port `8024` can be changed in `docker-compose.yml`, 8024 comes as a link-thought to 1024.
