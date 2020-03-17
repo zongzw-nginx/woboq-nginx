@@ -26,5 +26,5 @@ codebrowser_generator \
     $srcdir
 
 codebrowser_indexgenerator \
-    /root/woboq-nginx/html/public_html 
+    $tgtdir
     #-d https://code.woboq.org/data \
